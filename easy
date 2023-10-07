@@ -1,0 +1,65 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+
+local MainWindow = Rayfield:CreateWindow({
+	Name = "Main",
+	LoadingTitle = "Loading...",
+	LoadingSubtitle = "by MoRnD",
+	ConfigurationSaving = {
+	   Enabled = true,
+	   FolderName = nil, -- Create a custom folder for your hub/game
+	   FileName = "MoRnD Hub"
+	},
+	Discord = {
+	   Enabled = false,
+	   Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+	   RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+	},
+	KeySystem = true, -- Set this to true to use our key system
+	KeySettings = {
+	   Title = "MoRnD Hub",
+	   Subtitle = "Key System",
+	   Note = "Key: Free",
+	   FileName = "SiriusKey",
+	   SaveKey = true,
+	   GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+	   Key = "Free"
+	}
+ })
+
+
+ local MainTab = MainWindow:CreateTab("Main", 4483362458) -- Title, Image
+
+
+ local Button = MainTab:CreateButton({
+	Name = "110 Ping",
+	Callback = function()
+	shared.config = {
+   adjustment = 3.5, -- // Keep this between 3 to 4 \\ --
+   hit_range = 0.3, -- // You can mess around with this \\ --
+
+   mode = 'Always', -- // Hold , Toggle , Always \\ --
+   deflect_type = 'Remote', -- // Key Press , Remote \\ --
+   notifications = true,
+}
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/BaySorry/bladeballautoparry/main/script.lua'),true))()
+	end,
+ })
+
+
+
+
+ local Button = MainTab:CreateButton({
+	Name = "200 Ping",
+	Callback = function()
+	shared.config = {
+   adjustment = 3, -- // Keep this between 3 to 4 \\ --
+   hit_range = 0.5, -- // You can mess around with this \\ --
+
+   mode = 'Always', -- // Hold , Toggle , Always \\ --
+   deflect_type = 'Remote', -- // Key Press , Remote \\ --
+   notifications = true,
+}
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/BaySorry/bladeballautoparry/main/script.lua'),true))()
+	end,
+ })
