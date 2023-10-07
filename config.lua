@@ -8,4 +8,4 @@ shared.config = {
    keybind = Enum.KeyCode.E
 }
 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/cunning-sys/meowmeowscripts/main/bladeball.lua'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/BaySorry/bladeballautoparry/main/script.lua'),true))()
