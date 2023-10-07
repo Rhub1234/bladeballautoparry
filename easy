@@ -63,3 +63,17 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/BaySorry/bladeballau
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/BaySorry/bladeballautoparry/main/script.lua'),true))()
 	end,
  })
+ local Button = MainTab:CreateButton({
+	Name = "30-60 Ping",
+	Callback = function()
+	shared.config = {
+   adjustment = 2.5, -- // Keep this between 3 to 4 \\ --
+   hit_range = 0.3, -- // You can mess around with this \\ --
+
+   mode = 'Always', -- // Hold , Toggle , Always \\ --
+   deflect_type = 'Remote', -- // Key Press , Remote \\ --
+   notifications = true,
+}
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/BaySorry/bladeballautoparry/main/script.lua'),true))()
+	end,
+ })
